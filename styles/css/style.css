@@ -18,7 +18,7 @@
 ***************************************************/
 
 .container {
-	width: 1160px;
+	width: 80%;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -74,10 +74,12 @@ section {
 
 .welcome-banner {
 	width: 50%;
+	text-align: center;
 }
 
 .welcome-banner img {
 	width: 100%;
+	text-align: center;
 }
 
 /************************************************** 
@@ -98,8 +100,135 @@ section {
 .player-info .about-player {
 	line-height: 26px;
 	margin: 10px 0px;
-	text-align: justify;
 }
 .player-image img {
 	width: 100%;
+}
+
+/************************************************** 
+** Highlights details section css
+***************************************************/
+
+.all-highlights {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 69px;
+}
+
+.highlights-title {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 60px;
+}
+
+.highlights-description {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+.highlights-details a {
+	display: inline-block;
+	background: #e02c6d;
+	padding: 10px 24px;
+	margin-top: 27px;
+	border-radius: 5px;
+	list-style: none;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+	color: #ffffff;
+	text-align: center;
+}
+
+.highlights-details a i {
+	margin-left: 10px;
+}
+
+.highlights-banner img {
+	width: 100%;
+}
+
+/************************************************** 
+** Highlights details section css
+***************************************************/
+.footer-details {
+	text-align: center;
+}
+
+.footer-img img {
+	width: 35%;
+}
+
+.footer-social-details a {
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	display: inline-block;
+	border-radius: 50%;
+	color: #9d9fa3;
+	background-color: #eaebee;
+}
+
+.copy-rights p {
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 50px;
+}
+
+/* media */
+
+@media screen and (max-width: 1279px) {
+	/* Welcome area */
+	.wecome {
+		flex-direction: column;
+	}
+	.welcome-banner {
+		margin-top: 50px;
+	}
+}
+/* tablet responsive */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+	/* Welcome area */
+
+	.welcome-details {
+		width: 100%;
+	}
+	.welcome-banner {
+		width: 100%;
+	}
+	.welcome-details h1 {
+		font-size: 40px;
+		width: 100%;
+		line-height: 50px;
+	}
+	.player-details {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.all-highlights {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* Welcome area */
+	.welcome-details {
+		width: 100%;
+	}
+	.welcome-banner {
+		width: 100%;
+	}
+
+	.welcome-details h1 {
+		font-size: 40px;
+		width: 100%;
+		line-height: 50px;
+	}
+	.player-details {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.all-highlights {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
