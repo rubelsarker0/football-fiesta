@@ -55,6 +55,8 @@ section {
 
 .welcome-details a {
 	display: inline-block;
+	width: 250px;
+	height: 50px;
 	background: #e02c6d;
 	padding: 10px 24px;
 	margin-top: 27px;
@@ -66,6 +68,14 @@ section {
 	text-decoration: none;
 	color: #ffffff;
 	text-align: center;
+	transition: all 0.35s;
+}
+
+.welcome-details a:hover {
+	width: 200px;
+	border: 3px solid #2ecc71;
+	background: transparent;
+	color: #2ecc71;
 }
 
 .welcome-details a i {
@@ -128,6 +138,8 @@ section {
 
 .highlights-details a {
 	display: inline-block;
+	width: 250px;
+	height: 50px;
 	background: #e02c6d;
 	padding: 10px 24px;
 	margin-top: 27px;
@@ -139,6 +151,14 @@ section {
 	text-decoration: none;
 	color: #ffffff;
 	text-align: center;
+	transition: all 0.35s;
+}
+
+.highlights-details a:hover {
+	width: 200px;
+	border: 3px solid #2ecc71;
+	background: transparent;
+	color: #2ecc71;
 }
 
 .highlights-details a i {
