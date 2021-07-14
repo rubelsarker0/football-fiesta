@@ -144,7 +144,7 @@ section {
 	border-radius: 10px;
 }
 .player-info {
-	padding: 0 10px 0 10px;
+	padding: 0 20px 0 20px;
 }
 
 .player-info .player-name {
@@ -209,7 +209,7 @@ section {
 	font-size: 48px;
 	font-weight: 700;
 	line-height: 60px;
-	margin: 10px 0px;
+	margin: 20px 0px 40px 0;
 }
 
 .club-details {
