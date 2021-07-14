@@ -35,7 +35,8 @@ section {
 /************************************************** 
 ** welcome section css
 ***************************************************/
-.wecome {
+.welcome {
+	overflow: hidden;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -53,29 +54,41 @@ section {
 	width: 480px;
 }
 
-.welcome-details a {
+.btn-watch {
 	display: inline-block;
-	width: 250px;
-	height: 50px;
-	background: #e02c6d;
-	padding: 10px 24px;
-	margin-top: 27px;
-	border-radius: 5px;
-	list-style: none;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
+	padding: 20px 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	position: relative;
+	z-index: 1;
 	text-decoration: none;
-	color: #ffffff;
-	text-align: center;
-	transition: all 0.35s;
+	background-color: crimson;
+	color: white;
+	margin-top: 30px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.btn-watch::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 50%;
+	z-index: -1;
+	background-color: skyblue;
+	transform: rotate(45deg);
+	transition: 0.6s ease-in-out;
 }
 
-.welcome-details a:hover {
-	width: 200px;
-	border: 3px solid #2ecc71;
-	background: transparent;
-	color: #2ecc71;
+.btn-watch:hover::before {
+	transition: 0.6 ease-in-out;
+	left: 0;
+	top: -150%;
+	bottom: -150%;
+	right: 0;
+	z-index: -1;
+	opacity: 1;
 }
 
 .welcome-details a i {
@@ -90,6 +103,28 @@ section {
 .welcome-banner img {
 	width: 100%;
 	text-align: center;
+}
+
+.welcome:hover .welcome-banner img {
+	margin: 0 auto;
+	transition: 0.5s;
+	animation-name: stretch;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+
+@keyframes stretch {
+	0% {
+		transform: scale(0.4);
+	}
+	100% {
+		transform: scale(1.2);
+	}
 }
 
 /************Welcomesection css end ***************/
@@ -140,7 +175,7 @@ section {
 	line-height: 28px;
 }
 
-.highlights-details a {
+/* .highlights-details a {
 	display: inline-block;
 	width: 250px;
 	height: 50px;
@@ -163,7 +198,7 @@ section {
 	border: 3px solid #2ecc71;
 	background: transparent;
 	color: #2ecc71;
-}
+} */
 
 .highlights-details a i {
 	margin-left: 10px;
