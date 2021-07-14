@@ -139,6 +139,14 @@ section {
 	grid-gap: 30px;
 }
 
+.individual-player {
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	border-radius: 10px;
+}
+.player-info {
+	padding: 0 10px 0 10px;
+}
+
 .player-info .player-name {
 	font-size: 28px;
 	margin: 10px 0px;
@@ -151,6 +159,7 @@ section {
 }
 .player-image img {
 	width: 100%;
+	border-radius: 10px;
 }
 
 /************Player section css end ***************/
@@ -176,31 +185,6 @@ section {
 	line-height: 28px;
 }
 
-/* .highlights-details a {
-	display: inline-block;
-	width: 250px;
-	height: 50px;
-	background: #e02c6d;
-	padding: 10px 24px;
-	margin-top: 27px;
-	border-radius: 5px;
-	list-style: none;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
-	text-decoration: none;
-	color: #ffffff;
-	text-align: center;
-	transition: all 0.35s;
-}
-
-.highlights-details a:hover {
-	width: 200px;
-	border: 3px solid #2ecc71;
-	background: transparent;
-	color: #2ecc71;
-} */
-
 .highlights-details a i {
 	margin-left: 10px;
 }
@@ -217,7 +201,7 @@ section {
 .jerseys {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-column-gap: 30px;
+	grid-gap: 30px;
 }
 
 .jersey-section-title {
@@ -235,6 +219,8 @@ section {
 }
 .jersey {
 	padding: 15px;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	border-radius: 10px;
 }
 .club-jersey-img img {
 	width: 100%;
@@ -242,6 +228,47 @@ section {
 }
 
 /************Jersey section css end ***************/
+
+/************************************************** 
+** Ranking section css start
+***************************************************/
+.ranking-title {
+	text-align: center;
+	font-size: 50px;
+	background: #2d25a0;
+	color: #ffffff;
+	padding: 3%;
+	font-weight: 700;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.ranking-table {
+	width: 100%;
+	border-collapse: collapse;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	border-radius: 10px;
+}
+
+.ranking-table thead tr th {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.35px;
+	padding: 12px;
+	vertical-align: top;
+}
+
+.ranking-table tbody tr td {
+	font-size: 18px;
+	letter-spacing: 0.35px;
+	font-weight: 500;
+	padding: 8px;
+	text-align: center;
+}
+
+/************************************************** 
+** Ranking section css end
+***************************************************/
 
 /************************************************** 
 ** Footer section css start
@@ -276,47 +303,3 @@ section {
 }
 
 /************Footer section css end ***************/
-
-/************************************************** 
-** Ranking section css start
-***************************************************/
-.ranking-title {
-	text-align: center;
-	font-size: 50px;
-	background: #2d25a0;
-	color: #ffffff;
-	padding: 3%;
-	font-weight: 700;
-	margin-bottom: 20px;
-	border-radius: 5px;
-}
-
-.ranking-table {
-	width: 100%;
-	border-collapse: collapse;
-	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-		rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-		rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-	border-radius: 50px;
-	border-radius: 10px;
-}
-
-.ranking-table thead tr th {
-	font-size: 14px;
-	font-weight: 700;
-	letter-spacing: 0.35px;
-	padding: 12px;
-	vertical-align: top;
-}
-
-.ranking-table tbody tr td {
-	font-size: 18px;
-	letter-spacing: 0.35px;
-	font-weight: 500;
-	padding: 8px;
-	text-align: center;
-}
-
-/************************************************** 
-** Ranking section css end
-***************************************************/
