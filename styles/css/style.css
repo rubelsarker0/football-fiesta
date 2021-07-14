@@ -150,7 +150,36 @@ section {
 }
 
 /************************************************** 
-** Highlights details section css
+** Jersey section css
+***************************************************/
+.jerseys {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
+}
+
+.jersey-section-title {
+	text-align: center;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 60px;
+	margin: 10px 0px;
+}
+
+.club-details {
+	line-height: 26px;
+	margin: 10px 0px;
+}
+.jersey {
+	padding: 15px;
+}
+.club-jersey-img img {
+	width: 100%;
+	height: 550px;
+}
+
+/************************************************** 
+** Footer section css
 ***************************************************/
 .footer-details {
 	text-align: center;
