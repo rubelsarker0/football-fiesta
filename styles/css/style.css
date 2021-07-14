@@ -147,6 +147,7 @@ section {
 .player-info .about-player {
 	line-height: 26px;
 	margin: 10px 0px;
+	text-align: justify;
 }
 .player-image img {
 	width: 100%;
@@ -230,6 +231,7 @@ section {
 .club-details {
 	line-height: 26px;
 	margin: 10px 0px;
+	text-align: justify;
 }
 .jersey {
 	padding: 15px;
