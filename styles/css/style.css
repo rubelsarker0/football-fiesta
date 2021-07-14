@@ -92,6 +92,8 @@ section {
 	text-align: center;
 }
 
+/************Welcomesection css end ***************/
+
 /************************************************** 
 ** Player's details section css
 ***************************************************/
@@ -115,8 +117,10 @@ section {
 	width: 100%;
 }
 
+/************Player section css end ***************/
+
 /************************************************** 
-** Highlights details section css
+** Highlights details section css start
 ***************************************************/
 
 .all-highlights {
@@ -169,8 +173,10 @@ section {
 	width: 100%;
 }
 
+/************Highlight section css end ***************/
+
 /************************************************** 
-** Jersey section css
+** Jersey section css start
 ***************************************************/
 .jerseys {
 	display: grid;
@@ -198,8 +204,10 @@ section {
 	height: 550px;
 }
 
+/************Jersey section css end ***************/
+
 /************************************************** 
-** Footer section css
+** Footer section css start
 ***************************************************/
 .footer-details {
 	text-align: center;
@@ -229,3 +237,49 @@ section {
 	line-height: 24px;
 	margin-bottom: 50px;
 }
+
+/************Footer section css end ***************/
+
+/************************************************** 
+** Ranking section css start
+***************************************************/
+.ranking-title {
+	text-align: center;
+	font-size: 50px;
+	background: #2d25a0;
+	color: #ffffff;
+	padding: 3%;
+	font-weight: 700;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.ranking-table {
+	width: 100%;
+	border-collapse: collapse;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+		rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+		rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+	border-radius: 50px;
+	border-radius: 10px;
+}
+
+.ranking-table thead tr th {
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.35px;
+	padding: 12px;
+	vertical-align: top;
+}
+
+.ranking-table tbody tr td {
+	font-size: 18px;
+	letter-spacing: 0.35px;
+	font-weight: 500;
+	padding: 8px;
+	text-align: center;
+}
+
+/************************************************** 
+** Ranking section css end
+***************************************************/

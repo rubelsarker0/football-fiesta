@@ -1,4 +1,6 @@
-/* media */
+/************************************************** 
+** Media Queries
+***************************************************/
 
 @media screen and (max-width: 1279px) {
 	/* Welcome area */
@@ -24,12 +26,16 @@
 		width: 100%;
 		line-height: 50px;
 	}
+
+	/* Player area */
 	.player-details {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	/* Jersey area */
 	.jerseys {
 		grid-template-columns: repeat(2, 1fr);
 	}
+	/* Highlights area */
 	.all-highlights {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -49,12 +55,21 @@
 		width: 100%;
 		line-height: 50px;
 	}
+
+	/* Player area */
+
 	.player-details {
 		grid-template-columns: repeat(1, 1fr);
 	}
+
+	/* Highlights area */
+
 	.all-highlights {
 		grid-template-columns: repeat(1, 1fr);
 	}
+
+	/* Jersey area */
+
 	.jerseys {
 		grid-template-columns: repeat(1, 1fr);
 	}
